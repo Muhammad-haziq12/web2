@@ -1,3 +1,5 @@
+alert("bonjour sal zeb")
+
 const btn1 = document.querySelector('#myBtn1');
 const btn2 = document.querySelector('#myBtn2');
 const buttons = document.querySelectorAll('button');
@@ -8,6 +10,7 @@ btn1.addEventListener('click', () => {
   btn1.innerText = 'I have been clicked !';
   console.log('onClickHandlerForBtn1::click');
 });
+
 btn2.addEventListener('click', onClickHandlerForBtn2);
 btn2.addEventListener('click', onClickHandlerForBtnExtra);
 btn3.addEventListener('click', onClickHandlerForBtn3);
