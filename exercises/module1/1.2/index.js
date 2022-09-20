@@ -1,10 +1,5 @@
 
-
-
-
-
-let e = addDatetime('WELCOME TO EVERYONE ');
-console.log(e)
+alert(addDatetime("hvdjkvdj"))
 
 
 function addDatetime(message){

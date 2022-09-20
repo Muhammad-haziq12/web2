@@ -10,6 +10,7 @@ function button(){
     var message = document.getElementById("message");
 
     countnumber += 1;
+    compteur.innerHTML = countnumber;
     
     if (countnumber >=5 && countnumber <= 9){
         console.log("Bravo, bel échauffement !")
