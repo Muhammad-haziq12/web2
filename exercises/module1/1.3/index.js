@@ -13,12 +13,9 @@ function button(){
     compteur.innerHTML = countnumber;
     
     if (countnumber >=5 && countnumber <= 9){
-        console.log("Bravo, bel échauffement !")
-        compteur.innerHTML = countnumber;
         message.innerHTML = "Bravo, bel échauffement !";
     }
     if (countnumber >= 10){
-        compteur.innerHTML = countnumber;
         message.innerHTML = "Vous êtes passé maître en l'art du clic ! ";
     }
 } 
