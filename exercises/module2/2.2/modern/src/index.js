@@ -11,12 +11,12 @@ const homepage = `
 <p> Here you can find a selection of our favorite movies ; </p>
 
 <div class="pb-3">
-    <img class="img-thumbnail w-50" src="${Image1}" alt="Groot" />
+    <img class="img-thumbnail w-50" src="${Image1}" alt="Image1" />
   </div>
 
   
   <div>
-    <img class="img-thumbnail w-50" src="${Image2}" alt="Stormtrooper" />
+    <img class="img-thumbnail w-50" src="${Image2}" alt="Image2" />
   </div>
 </div>`;
 
