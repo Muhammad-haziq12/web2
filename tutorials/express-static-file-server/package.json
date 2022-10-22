@@ -1,0 +1,15 @@
+{
+  "name": "md",
+  "version": "1.0.0",
+  "description": "zeb",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PAPAMD",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
