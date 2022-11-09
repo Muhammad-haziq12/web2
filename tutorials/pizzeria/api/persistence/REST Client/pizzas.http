@@ -12,13 +12,13 @@ GET {{baseUrl}}/pizzas/?order=-title
 
 
 ### Create a pizza
-POST {{baseUrl}}/pizzas
+POST {{baseUrl}}/pizzas/
 Content-Type: application/json
 {
-    "title":"Magic Green",
+    "title":"Magic Gree",
     "content":"Epinards, Brocolis, Olives vertes, Basilic"
 }
 
 ### Delete pizza identified by 2
-DELETE {{baseUrl}}/pizzas/1
+DELETE {{baseUrl}}/pizzas/3
 

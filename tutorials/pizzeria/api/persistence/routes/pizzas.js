@@ -32,6 +32,15 @@ const MENU = [
   },
 ];
 
+
+// Read all the pizzas from the menu
+router.get('/', function (req, res) {
+  console.log('GET /pizzas');
+  const pizzas = parse(jsonDbPath, MENU);
+  res.json(pizzas);
+});
+
+
 /* Read all the pizzas from the menu
    GET /pizzas?order=title : ascending order by title
    GET /pizzas?order=-title : descending order by title
