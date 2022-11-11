@@ -7,10 +7,7 @@ const router = express.Router();
 const jsonDbPath = path.join(__dirname, '/../data/films.json');
 
 
-router.get('/', function (req, res) {
-  const films = parse(jsonDbPath);
-  res.json(films);
-});
+
 
 // Read all the films, filtered by minimum-duration if the query param exists
 router.get('/', (req, res) => {
