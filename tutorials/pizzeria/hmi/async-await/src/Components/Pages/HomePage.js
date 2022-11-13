@@ -18,14 +18,28 @@ import { clearPage, renderPageTitle } from '../../utils/render';
       content: 'Mango, Sparkling water, Fermented tea',
     },
   ];
+
+  async function getAllPizzas() {
+    try {
+      const response = await fetch('/api/pizzas');
+  
+      if (!response.ok) throw new Error(`fetch error : ${response.status} : ${response.statusText}`);
+  
+      const pizzas = await response.json();
+  
+      return pizzas;
+    } catch (err) {
+      console.error('getAllPizzas::error: ', err);
+      throw err;
+    }
+  }
+  
   
   const HomePage = async() => {
     try {
       clearPage();
-      const response = await fetch('/api/pizzas');
-      if (!response.ok) throw new Error(`fetch error : ${response.status} : ${response.statusText}`);
-      const pizzas = await response.json();
-      renderMenuFromString(pizzas);
+      const pizzas = await getAllPizzas();
+    renderMenuFromString(pizzas);
     attachOnMouseEventsToGoGreen();
     renderDrinksFromNodes(DRINKS);
   } catch (err) {
