@@ -1,4 +1,5 @@
 const path = require('node:path');
+const escape = require('escape-html');
 const { parse, serialize } = require('../utils/json');
 
 const jsonDbPath = path.join(__dirname, '/../data/pizzas.json');
@@ -57,8 +58,8 @@ function createOnePizza(title, content) {
 
   const createdPizza = {
     id: getNextId(),
-    title,
-    content,
+    title: escape(title),
+    content :escape(content),
   };
 
   pizzas.push(createdPizza);
