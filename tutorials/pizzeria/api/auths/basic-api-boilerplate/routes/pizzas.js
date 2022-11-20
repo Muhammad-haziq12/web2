@@ -54,7 +54,7 @@ router.delete('/:id', authorize, isAdmin, (req, res) => {
 });
 
 // Update a pizza based on its id and new values for its parameters
-router.patch('/:id',, authorize, isAdmin, (req, res) => {
+router.patch('/:id', authorize, isAdmin, (req, res) => {
   const title = req?.body?.title;
   const content = req?.body?.content;
 
